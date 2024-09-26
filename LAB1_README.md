@@ -1,6 +1,6 @@
 # How to approach Lab 1 and using resources
 
-#### 24-Sep-24, Rev. 1
+#### 25-Sep-24, Rev. 1
 
 ## Getting started with Lab 1:
 
