@@ -54,9 +54,9 @@ The following are guides on how to navigate terminal and cmd prompt.
 
 [Cmd Prompt](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/)
 
-Open your repo on github. There will be a green button that says Code. Click on it and copy to your clipboard the SSH link. It will look something like "git@github.com:yourName/yourRepo.git".
+Open your repo on github. There will be a green button that says Code. Click on it and copy to your clipboard the SSH link. It will look something like `git@github.com:yourName/yourRepo.git`.
 
-Using terminal or cmd prompt, navigate to the location where you want your local version to reside. In the command line, use the command "git clone yourSSHLink" to clone into your repo. If it worked correctly, a new directory should appear. You have now successfully created a remote repo on Github and cloned it to your system!
+Using terminal or cmd prompt, navigate to the location where you want your local version to reside. In the command line, use the command `git clone <yourSSHLink>` to clone into your repo. If it worked correctly, a new directory should appear. You have now successfully created a remote repo on Github and cloned it to your system!
 
 ### Ok I've got a repo set up. How do I use it?
 
