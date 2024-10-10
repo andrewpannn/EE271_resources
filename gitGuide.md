@@ -30,9 +30,17 @@ This will allow you to push and pull to your remote repos on Github.
 
 Follow the [Github SSH docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and complete the section "Generating a new SSH key"
 
+```
+# macOS command
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
 Continue to the [next page](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) and complete the section "Adding a new SSH key to your account". 
 
-If the clip command can't find the file, manually navigate to the directory and execute "clip < id_ed25519.pub". If you are unsure how to do this, refer to step 5. 
+Before running the clip command, run `cd ~` to return to your home directory. If the clip command can't find the file, manually navigate to the directory and execute  `clip < id_ed25519.pub`. If you are unsure how to do this, refer to step 5.
+
+For macOS, use `pbcopy < id_ed25519.pub`
+
 
 ### 4. Create a new repo on github
 
