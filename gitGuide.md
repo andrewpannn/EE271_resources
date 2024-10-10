@@ -56,7 +56,7 @@ Now that you have a git repo, you can use all the great features that are built 
 
 ## git commands
 
-List of commands and commonly used options. For more detailed information, visit the official git documentation.
+List of commands and commonly used options. For more detailed information, visit the official git documentation. You can find the documentation by just googling the name of the command.
 
 ```
 git status
@@ -99,7 +99,7 @@ git pull
 ```
 Fetch from and integrate with another repository or a local branch
 
-Incorporates the changes from a remote repo to current branch. 
+Incorporates the changes from a remote repo to current branch.
 
 ```
 git branch [-a] [-d] [<branch>]
