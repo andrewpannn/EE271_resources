@@ -92,20 +92,31 @@ git push
 ```
 Update remote refs along with associated objects
 
+Essentially, updates your remote repo to reflect your local repo.
+
 ```
 git pull
 ```
 Fetch from and integrate with another repository or a local branch
 
+Incorporates the changes from a remote repo to current branch. 
+
 ```
-git branch [-a] [-d]
+git branch [-a] [-d] [<branch>]
 ```
 List, create, or delete branches
+
+Does not let you switch between branches. For switching branches, use `git checkout`. 
+
+To create a branch, run `git branch [<branch>]`, where `<branch>` is the name of the new branch you want to create. The `-a` option will list all remote and local branches. To delete a branch, use the `-d` option followed by the branch you want to delete. For example, if you wanted to delete a branch called `test`, run `git branch -d test`.
+
 
 ```
 git checkout [<branch>]
 ```
 Switch branches or restore working tree files
+
+Switches to the branch that is specified in `<branch>`.
 
 ```
 git merge [<branch>]
