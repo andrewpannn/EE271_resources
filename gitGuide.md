@@ -14,7 +14,7 @@ Git is a free version control tool initially developed by Linus Torvalds. Github
 
 ### Overview:
 
-The goal of this document is to help you get git installed on your device and create your first repo. This repo is where you can store your files for the course. This guide will cover some of the key functionalities of git: commit, push, pull, and branch. 
+The goal of this document is to help you get git installed on your device and create your first repo. This repo is where you can store your files for the course. We will cover some of the key functionalities of git: commit, push, pull, and branch. 
 
 ### 1. Install git on your system
 
@@ -48,7 +48,68 @@ The following are guides on how to navigate terminal and cmd prompt.
 
 Open your repo on github. There will be a green button that says Code. Click on it and copy to your clipboard the SSH link. It will look something like "git@github.com:yourName/yourRepo.git".
 
-Using terminal or cmd prompt, navigate to the location where you want your local version to reside. In the command line, use the command "git clone yourSSHLink" to clone into your repo. If it worked correctly, a new directory should appear. You have now successfully created a remote repo on Github and copied it to your system!
+Using terminal or cmd prompt, navigate to the location where you want your local version to reside. In the command line, use the command "git clone yourSSHLink" to clone into your repo. If it worked correctly, a new directory should appear. You have now successfully created a remote repo on Github and cloned it to your system!
 
+### Ok I've got a repo set up. How do I use it?
 
+Now that you have a git repo, you can use all the great features that are built into git. You may also want to refer to this [git cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf). As the name version control suggests, git provides ways to manage the versions of your files. We will cover some of the key git commands.
 
+## git commands
+
+List of commands and commonly used options. For more detailed information, visit the official git documentation.
+
+```
+git status
+```
+
+Shows the status of the working tree
+
+```
+git clone
+```
+Clone a repository into a new directory
+
+Can be used with github to clone remote repo onto your local device.
+
+```
+git add [<pathspec>] [-A]
+```
+Add file contents to the index
+
+Adds the file specified in `<pathspec>`. If the `-A` option is used with no pathspec, all files in the entire working tree are updated. 
+
+```
+git commit [-a] [-m]
+```
+Record changes to the repository
+
+Creates a commit that contains the current content that have been added by `git add`. If `-a` is used, all modified or deleted files are automatically staged. `-a` does not work with new files. The `-m` options allow you to write a commit message in the same command. 
+
+An example might look like `git commit -m "add 8_1mux_testbench to project file"`. This would create a commit with a title that stores all changes that have been previously recorded with `git add`. 
+
+```
+git push
+```
+Update remote refs along with associated objects
+
+```
+git pull
+```
+Fetch from and integrate with another repository or a local branch
+
+```
+git branch [-a] [-d]
+```
+List, create, or delete branches
+
+```
+git checkout [<branch>]
+```
+Switch branches or restore working tree files
+
+```
+git merge [<branch>]
+```
+Join two or more development histories together
+
+Use `git checkout` to switch to the branch you want to merge onto. Then, execute `git merge [<branch>]` where `<branch` is the branch you want to be merged into your current branch. 
