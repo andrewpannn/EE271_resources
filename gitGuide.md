@@ -123,4 +123,4 @@ git merge [<branch>]
 ```
 Join two or more development histories together
 
-Use `git checkout` to switch to the branch you want to merge onto. Then, execute `git merge [<branch>]` where `<branch` is the branch you want to be merged into your current branch. 
+Use `git checkout` to switch to the branch you want to merge onto. Then, execute `git merge [<branch>]` where `<branch` is the branch you want to be merged into your current branch. Typically, you will be using `git checkout main` to switch to your main branch. Then, you can use `git merge <branch>` to merge your new changes on to your main branch.
