@@ -64,6 +64,8 @@ git status
 
 Shows the status of the working tree
 
+It is useful to run `git status` often, especially before adding changes or making commits.
+
 ```
 git clone
 ```
